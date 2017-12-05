@@ -12,7 +12,7 @@ deploy:
     - "pci-4g-linux-amd64"
     - "pci-4g-windows-amd64.exe"
     - "pci-4g-darwin-amd64"
-    skip_cleanup: true
+  skip_cleanup: true
   on:
     tags: true
     go: 1.9.2
