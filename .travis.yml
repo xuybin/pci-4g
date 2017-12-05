@@ -1,0 +1,20 @@
+language: go
+go:
+  - 1.9.2
+  - master
+script:
+  - sh build.sh
+before_deploy: "echo 'before_deploy'"
+deploy:
+  provider: releases
+  api_key:
+    secure: AK+IvwQcKY9hncm3/at9mfLRCod9Ip4UgtZ0To0lTSo2+xM2TGRT2LVvb9FyKhTdivrxfRCwS7yCjYKc1hip85zAj+lXJ2q62y024pLa9nLpU8Ia5WrGODGkV/yFNTIncrVofA73sXf84jChSpWgCyfkcWd/1K7pc2Fpay/fFqIHcIqMruQOV9wYYj7J+M0wCcgVt4TEl5hXWhouLbHKwu8j4phssAZVkjSMtyk0IAN+pCVII/WPgCBHq/g8sinsx0dwkMtMGcaem/0X2U+v9dJxeosmxkpmGIZ3Dc2oDTpIPJgu0HB1lbA4LFb5JkXv7cRTIya24RSUfl90wP4Hqwa/cY2kdBLISBxIaJxQTrPaknRIpf2YLvk8Pu54LXyWoENvJO06f34nYqa+M+KBIZB0h9BkWZ8MgqBxAOaRncRsekr6OVIz3xKrvmc5+9iVlb+UqK9Zx6i7EGEclg1w6Xc6JWAnDKVeNG3JKUxeLPQaRYYy9stwWkT6b8JIexFtHDnste5nLqjUtBDbleO0+nlZ3bSg8JXT7WKLbbNQCrBosr/V6iIoucY4eJW8t2sY+AfsnF47RbbzKOmGZWcRQz0GJ/wxkYsY9TpbgSfQ7ntHQ+RaaGGvSWr2wSiTZ7FO2aUOkrXPYH22eouxf2raufxnRr0/fN3YBou1HlDtxA0=
+  file:
+    - "go-api-gateway-linux-amd64"
+    - "go-api-gateway-windows-amd64.exe"
+    - "go-api-gateway-darwin-amd64"
+  skip_cleanup: true
+  on:
+    tags: true
+    go: 1.9.2
+    repo: xuybin/go-api-gateway
