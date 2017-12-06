@@ -26,4 +26,4 @@ Options:
 
 ```
 
-* -l --listen **PCI_LS**, gateway listen addr, format is *host:port*, example: *0.0.0.0:1329*
+* -l --listen **PCI_LS**, gateway listen addr, format is *host:port*, example: *0.0.0.0:8080*
