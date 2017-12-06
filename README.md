@@ -15,10 +15,10 @@ You could download the latest build binaries from [release page](https://github.
 
 ## RUN
 
-You could use **cli option** or **environment varibles** to config your api gateway
+You could use **cli option** or **environment varibles** to config your pci-4g
 
 ```bash
-./go-api-gateway --help
+./pci-4g --help
 Options:
 
   -h, --help                                display help information
