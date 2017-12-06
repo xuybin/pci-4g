@@ -101,8 +101,8 @@ func (s *PciServer) InitDocs() *PciServer {
 				SwaggerSchemaProps: spec.SwaggerSchemaProps{Example: ""},
 			},[]string{"multipart/form-data"},[]string{"application/json","application/octet-stream"}),
 			Get:newOperation(mrModelTag,
-				fmt.Sprintf("添加统计MR模型任务"),
-				fmt.Sprintf("传入要统计的MR文件,时间维度(60分,24小时,是否夸天合并)"),
+				fmt.Sprintf("查询统计MR模型任务"),
+				fmt.Sprintf("根据任务id查询任务进度)"),
 				[]spec.Parameter{
 					{
 						SimpleSchema: spec.SimpleSchema{
