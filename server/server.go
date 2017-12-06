@@ -19,7 +19,3 @@ func NewPciServer() (s *PciServer) {
 	s.Echo.HideBanner = true
 	return s;
 }
-
-var mrModelTag = "mrModel"
-var pciPlanTag = "pciPlan"
-var pciEvaluate = "pciEvaluate"
