@@ -108,7 +108,7 @@ func (s *PciServer) InitDocs() *PciServer {
 		}},
 		"/mr/matrix/{id}":{PathItemProps: spec.PathItemProps{
 			Get:newOperation(mrModelTag,
-				fmt.Sprintf("获取MR统计模型任务"),
+				fmt.Sprintf("获取MR统计模型任务结果"),
 				fmt.Sprintf("根据任务id获取MR统计模型(完成时)或进度(未完成)"),
 				[]spec.Parameter{
 					{
