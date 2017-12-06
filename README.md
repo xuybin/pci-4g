@@ -8,3 +8,22 @@ According to MR traffic, signal to noise ratio, working days and non-working day
 in development now.
 
 documents will be wrote later.
+
+## DOWNLOAD
+
+You could download the latest build binaries from [release page](https://github.com/xuybin/pci-4g/releases) !
+
+## RUN
+
+You could use **cli option** or **environment varibles** to config your api gateway
+
+```bash
+./go-api-gateway --help
+Options:
+
+  -h, --help                                display help information
+  -l, --*listen[=$PCI_LS]              *gateway listen host and port
+
+```
+
+* -l --listen **PCI_LS**, gateway listen addr, format is *host:port*, example: *0.0.0.0:1329*
