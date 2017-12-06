@@ -22,7 +22,7 @@ You could use **cli option** or **environment varibles** to config your pci-4g
 Options:
 
   -h, --help                                display help information
-  -l, --*listen[=$PCI_LS]              *gateway listen host and port
+  -l, --*listen[=$PCI_LS]              *pci-4g listen host and port
 
 ```
 
